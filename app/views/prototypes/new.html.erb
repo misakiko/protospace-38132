@@ -1,0 +1,11 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">新規プロトタイプ投稿</h2>
+        <%# 部分テンプレートでフォームを表示する %>
+        <%= render partial: "form", locals: { prototype: @prototype } %>
+                                           <%# 部分テンプレート内の変数: @はnewアクションのとこの %>
+        <%# renderはビューの呼び出し コントローラ内でも使える %>
+    </div>
+  </div>
+</div>
